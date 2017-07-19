@@ -1,2 +1,6 @@
 # EnigmaMachine
-Emulates a simplified version of the Enigma machines used by the German military during World War II
+Emulates a simplified version of the Enigma machines used by the German military during World War II.
+
+Implemented in Java, a simulated Enigma machine is designed using an object oriented approach. The EnigmaMachine object is constructed using three Rotor objects and a Reflector object which can then be used to encode and decode uppercase, alphabetic English. To demonstrate this, four additional programs are employed. EnigmaMachineUser encodes and decodes a simple String to demonstrate the EnigmaMachine object is functioning properly. FindRotorSettings partially decodes an encrypted document using all possible settings on an EnigmaMachine, printing matches that are likely to be English. Methods in the English class are used to filter likely matches. Lastly, the Decrypt program decrypts the entire encrypted document using the rotor settings discovered via the FindRotorSettings program.
+
+When running FindRotorSettings and Decrypt, it is necessary to use the same Strings for the three Rotors and Reflector. When using FindRotorSettings, the desired file is entered on line 45. In order to narrow the number of matches, three tunable constants are provided. Once a match is found, the rotor settings can be entered on line 22 of Decrypt in order to decrypt the entire file.
